@@ -8,11 +8,15 @@ Not a company summary. The question that changes what you do *before* the call: 
 
 ---
 
-## Start here
+## Start here, and there are two ways in
 
-### **[deploy/grok-bot.md](deploy/grok-bot.md)**
+### **[BUILD-IT-IN-CHAT-FIRST.md](BUILD-IT-IN-CHAT-FIRST.md)** &middot; the easier one
+Write your binder in Claude or ChatGPT, argue with it until it is right, then carry the finished thing to your Bot. **This is the route we took.** You end up owning a folder about your own business whether or not you ever build the agent.
 
-Eleven steps, in order, with the exact things to click and type.
+### **[deploy/grok-bot.md](deploy/grok-bot.md)** &middot; the direct one
+Eleven steps, in order, with the exact things to click and type. The Bot interviews you itself.
+
+**Lost in the vocabulary?** [GLOSSARY.md](GLOSSARY.md) defines every word in this kit in plain English, including the ones other people use for the same things.
 
 **Read its first four paragraphs before you start.** They cover the three things on that platform that can change without telling you, one of which wiped our own agent's entire instruction set after a save that was only meant to change its name.
 
@@ -29,9 +33,11 @@ Eleven steps, in order, with the exact things to click and type.
 | [deploy/readback-check.md](deploy/readback-check.md) | the one minute check you run after every change. **Do not skip this** |
 | [deploy/binder-template/](deploy/binder-template) | blank files for your own business, with the warnings in the comments |
 | [system-prompt.md](system-prompt.md) | the job description in long form, if you want to read what the block says |
-| [skills/](skills) | the two playbooks: reading a room, and writing the card |
+| [skills/](skills) | the two playbooks the agent itself runs on |
 | [profile.md](profile.md) | the eight things the agent needs to know about your business |
 | [evals/](evals) | how to test it, how big a test set should be, and the trigger question |
+| [GLOSSARY.md](GLOSSARY.md) | every word in this kit, in plain English |
+| [.claude/skills/](.claude/skills) | **seven methods for building your own**: the binder, your ICP, the one job, the card, the split, attacking it, turning failures into tests |
 
 ---
 
@@ -43,7 +49,7 @@ This kit is one worked example of the same seven parts every agent has. The plai
 |---|---|---|
 | 1. The job description | who it is, what it does, what it never does | `system-prompt.md`, and the top of the block |
 | 2. **The onboarding binder** (context pack) | what it knows about your business | **yours.** `binder-template/` is the empty shape |
-| 3. The playbook (skills) | how it does the repeatable parts | `skills/` |
+| 3. The playbook (skills) | how it does the repeatable parts | `skills/` for the agent, `.claude/skills/` for you |
 | 4. The keys (tools) | what it can open and touch | the connectors, step 7 |
 | 5. The deliverable (contract) | what lands on your desk, same shape every time | the card, in `prep-the-card` |
 | 6. The ride along (evals) | how you check it before a customer does | `evals/` |
