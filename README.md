@@ -88,7 +88,7 @@ This trips people up, so: **two folders, two different readers.**
 
 **`skills/`** holds the two playbooks already inside the build block. They are here separately so you can read them as prose instead of hunting through 296 lines.
 
-**`.claude/skills/`** holds seven methods for building your own version. **Nothing installs and nothing runs** — each is a markdown file describing how to think about one part of the job.
+**`.claude/skills/`** holds seven methods for building your own version. **Nothing installs and nothing runs.** Each is a markdown file describing how to think about one part of the job.
 
 **How to actually use one:**
 - **In Claude Code:** open the kit folder and say what you are doing. *"Help me build my binder."* It picks the right one up on its own.
